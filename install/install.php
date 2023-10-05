@@ -78,7 +78,7 @@ class PluginGestaohorasInstall
 
       // Create standard display preferences
       $displayprefs = new DisplayPreference();
-      $found_dprefs = $displayprefs->find("`itemtype` = 'PluginGestaohorasBalance_Hour'");
+      $found_dprefs = $displayprefs->find(["`itemtype` = 'PluginGestaohorasBalance_Hour'"]);
 
       if (count($found_dprefs) == 0) {
 
